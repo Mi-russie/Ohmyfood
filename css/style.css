@@ -1,160 +1,780 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-    <meta charset="utf-8"/> <!--allow most common charset-->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--tell the browser the width of screen of the user is the full screen, no matter screen he use-->
+/* Document
+   ========================================================================== */
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com"><!--both three lines below indicate the font family on googlefont-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
-    <link rel="icon" href="/favicon.ico" sizes="any"><!--for the svg icone, or others,  the user will find on browser tab -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="/manifest.json">
-
-    <link rel="stylesheet" type="text/css" href="myfood.css"><!--css for desktop, tablet and phone-->
-    <link rel="stylesheet" type="text/css" href="tablette.css" media="screen and (max-width: 992px)">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
-
-    <title>OhMyFood</title>
-    
-</head>
-
-<body>
-    <header>
-        <div id="header">
-            <img src="logo/ohmyfood@2x.svg"  class="logo" alt="logo_ohmyfood">
-    </header>
-
-    <section id="location">
-        <i class="fas fa-map-marker-alt local__icon"></i>
-        <span class="location__texte">Paris, Belleville</span>
-    </section>
-
-    <section id="presentation">
-        <h2>Réservez le  menu qui vous convient</h2>
-    </section>
-
-    <section id="slogan">
-        <h3>Découvrez des restaurants d'exception,sélectionnés par nos soins.</h3>
-    </section>
-
-    <section id="button_explorer">
-        Explorer nos restaurants
-    </section>
-
-    <section id="fonctionnement">
-        <h2>Fonctionnement</h2>
-         <nav>
-             <ul>
-                <li>
-                    <span class="number">1</span>
-                    <i class="tuto__icon fas fa-mobile-alt"></i>
-                    <span class="text">Choisissez un restaurant</span>
-                </li>
-                <li>
-                    <span class="number">2</span>
-                    <i class="tuto__icon fas fa-list-ul"></i>
-            <span class="text">Composez votre menu</span>
-                </li>
-                <li>
-                    <span class="number">3</span>
-                    <i class="tuto__icon fas fa-store"></i>
-            <span class="text">Dégustez au restaurant</span>
-                </li>
-            </ul>
-         </nav>
-    </section>
-
-    <section id="presentation_restaurant">
-
-        <a href="la-palette-du-gout.html" class="menu-palette">
-            <div class="card">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la-palette-du-gout-restaurant" class="restaurant-palette">
-                <span>Nouveau</span>
-                <div class="card_body">
-                    <h4>
-                        La palette du goût
-                    </h4>
-                    <p>
-                        Ménilmontant
-                    </p>
-                    <i class="card__coeur1 far fa-heart fa-2x"></i>
-                    <i class="card_coeur2 fas fa-heart fa-2x"></i>
-                </div>
-            </div>
-        </a>
-
-        <a href="la-note-enchantee.html" class="menu-enchantee">
-            <div class="card">
-                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la-note-enchantee-restaurant" class="restaurant-enchantee">
-                <span>Nouveau</span>
-                <div class="card_body">
-                    <h4>
-                        La note enchantee
-                    </h4>
-                    <p>
-                        Charonne
-                    </p>
-                    <i class="card__coeur1 far fa-heart fa-2x"></i>
-                    <i class="card_coeur2 fas fa-heart fa-2x"></i>
-                </div>
-            </div>
-        </a>
-
-        <a href="a-la-francaise.html" class="menu-francais">
-            <div class="card">
-                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a-la-francaise-restaurant" class="restaurant-francais">
-                <span>Nouveau</span>
-                <div class="card_body">
-                    <h4>
-                        À la française
-                    </h4>
-                    <p>
-                        Cité rouge
-                    </p>
-                    <i class="card__coeur1 far fa-heart fa-2x"></i>
-                    <i class="card_coeur2 fas fa-heart fa-2x"></i>
-                </div>
-            </div>
-        </a>
-
-        <a href="delice-des-sens.html" class="menu-delice">
-            <div class="card">
-                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-delice-des-sens-restaurant" class="restaurant-delice">
-                <span>Nouveau</span>
-                <div class="card_body">
-                    <h4>
-                       Le délices des sens
-                    </h4>
-                    <p>
-                        Folie-Méricourt
-                    </p>
-                    <i class="card__coeur1 far fa-heart fa-2x"></i>
-                    <i class="card_coeur2 fas fa-heart fa-2x"></i>
-                </div>
-            </div>
-        </a>
-
-    </section>
-
-    <footer>
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  * {
+    box-sizing: border-box; 
+  }
+  .row {
+    display: flex;
+  }
+  
+  /*ohmyfood*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+  
+  
+  
+  
+  
+  /* declaration des couleurs*/
+  :root{
+      --primaire: #9356DC;
+      --secondaire: #FF79DA;
+      --tertiaire: #99E2D0;
+  }
+  /* declaratiom de la font-family*/
+  /*
+  logo et titre: Shrikhand
+  texte: Roboto 
+  */
+  /*debut code css*/
+  /*css loader
+  .loader-container{
+      position: absolute;
+      background: #red;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 1s ease-in-out;
+  }
+  .oh{
+      font-size: 50px;
+      background: #9356DC;
+      margin: 0 15px;
+      animation: loader 4s 0.4s alternate;
+      width: 100px;
+  }
+  .my{
+      font-size: 50px;
+      background: #FF79DA;
+      margin: 0 15px;
+      animation: loader 3s 0.3s alternate;
+      width: 100px;
+  }
+  .food{
+      font-size: 50px;
+      background: var(--tertiaire);
+      margin: 0 15px;
+      animation: loader 2s 0.2s alternate;
+      width: 100px;
+  }
+  @keyframes loader {
+      100%{
+          transform: translateX(1500px);
         
-        <nav class="navigation">
-            
-            <ul>
-                <li><h3>Ohmyfood</h3></li>
-                <li><a href="proposer_restaurant.html"> <i class="footer__icon fas fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href="conditions_generales_de_vente.html"><i class="footer__icon fas fa-hands-helping"></i> Devenir partenaire</a></li>
-                <li><a href="donnees_et_confidentialites.html">Mentions légales</a></li>
-            </ul>
-        </nav>
-        
-</body>
-</html>
+      }
+      
+  }*/
+  /*css header*/
+  header div img{
+    height: 50px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  /* css location*/
+  #location{
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(grey, 1%, whitesmoke);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 15px;
+    vertical-align: center;
+  }
+  
+  #location span{
+    margin-left: 10px;
+  }
+  /*css slogan*/
+  .background_slogan{
+    width: 100%;
+    background: linear-gradient(white, whitesmoke);
+  }
+  #presentation{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #slogan h3{
+  font-size: 16px;
+  text-align: center;
+  color: lightslategrey; 
+  font-weight: lighter;
+  }
+  
+  #button_explorer{
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+  .lineaire-simple{
+    background: linear-gradient(#FF79DA, #9356DC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 35px;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px lavender;
+  }
+  .lineaire-simple:hover{
+    box-shadow: 2px 2px #bfb4cd ;
+    opacity: 0.7;
+  }
+  
+  
+  /*css fonctionnement*/
+  #fonctionnement{ 
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #fonctionnement nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .fonctionnement nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #fonctionnement h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 50%;
+  }
+  .fonctionnement{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  #fonctionnement li{ 
+    display: flex;
+    flex-direction: column;/* mise en ligne nombre icone et button*/
+    justify-content: center;
+    align-items: center;/* alignement nombre icone et button*/
+    list-style: none;
+    margin-bottom: 15px;
+    width: 100%;
+    margin-left: -14%;
+  }
+  
+  
+  #fonctionnement li .number_un{
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50%;
+    border: solid 3px #9356DC;
+    z-index: 3;
+    margin-right: 5%;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    position: relative;
+    right: 38%;
+    top: 60px;
+  }
+  #fonctionnement li .number_deux{
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50%;
+    border: solid 3px #9356DC;
+    z-index: 3;
+    margin-right: 5%;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    position: relative;
+    right: 38%;
+    top: 60px;
+  }
+  #fonctionnement li .number_trois{
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50%;
+    border: solid 3px #9356DC;
+    z-index: 3;
+    margin-right: 5%;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    position: relative;
+    right: 38%;
+    top: 60px;
+  }
+  #fonctionnement .icone{ 
+    z-index: 2;
+    color: grey;
+    position: relative;
+    right: 26%;
+    top: 40px;
+  }
+  #fonctionnement li button{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 15PX 15PX 15PX 15PX;
+    border-color: whitesmoke;
+    height: 60PX;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #fonctionnement li button:hover{
+    box-shadow: 2px 2px #bfb4cd ;
+    opacity: 0.7;
+  }
+  
+  
+  .text_un{
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  .text_deux{ 
+   font-weight: bold;
+   font-size: 15px;
+   width: 100%;
+  }
+  
+  .text_trois{ 
+     font-weight: bold;
+     font-size: 15px;
+     width: 100%;
+  }
+  /*css restaurant presentation restaurant*/
+  .presentation_restaurant h2{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #presentation_restaurant img{
+    width: 100%;
+    height: 150px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .presentation_restaurant{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .presentation_restaurant .card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px 25px 25px 25px;
+    height: 220px;
+  }
+  .presentation_restaurant a{
+    text-decoration: none;
+  }
+  .nouveau{
+    z-index: 2;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    list-style-type: none;
+    background-color: aquamarine;
+    position: relative;
+    top: -140px;
+    left: 75%;
+    padding: 5px 5px 5px 5px;
+  }
+  h4{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    top:-35px;
+    left: 10px;
+  }
+  .name{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: -45px;
+    left: 10px;
+  }
+  .heart_un{
+    color: black;
+    background-color: white;
+    position: relative;
+    top: -100px;
+    left: 85%;
+    z-index: 2;
+    font-weight: lighter;
+    font-size: 16px;
+    height: 10px;
+    width: 10px;
+  }
+  
+  .heart_deux{
+    display: none;
+    color: var(--primaire) ;
+    position: relative;
+    top: -100px;
+    left: 74.2%;
+    z-index: 2;
+    font-weight: lighter;
+  }
+  
+  /*CSS FOOTER*/
+  footer{
+    background-color: rgb(38, 36, 36); 
+    display: flex; justify-content: space-between; width: 100%;
+     height: auto; padding-bottom: 20px;
+  }
+  footer li{
+    list-style-type: none;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  footer li h3{
+    padding-left: 0px;
+    font-weight: bold; font-size: 18px;
+    padding-top: 25px;
+  }
+  
+  
+  
+  footer a{
+    text-decoration: none; color: white;
+  }
+  
+  footer a:hover{
+    text-decoration: underline; color:#0065FC;
+  }
+  
+  .navigation{
+    width: 70%;
+  }
+  
+  footer a:hover
+  {
+    text-decoration: none; color:#0065FC;
+  }
+  
+  footer nav
+  {
+    width: 100%;
+  }
+  
+  footer nav ul,footer h3
+  {
+    padding-left: 20px;
+  }
