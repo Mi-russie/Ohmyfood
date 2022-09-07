@@ -383,46 +383,12 @@
   texte: Roboto 
   */
   /*debut code css*/
-  /*css loader
-  .loader-container{
-      position: absolute;
-      background: #red;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 1s ease-in-out;
-  }
-  .oh{
-      font-size: 50px;
-      background: #9356DC;
-      margin: 0 15px;
-      animation: loader 4s 0.4s alternate;
-      width: 100px;
-  }
-  .my{
-      font-size: 50px;
-      background: #FF79DA;
-      margin: 0 15px;
-      animation: loader 3s 0.3s alternate;
-      width: 100px;
-  }
-  .food{
-      font-size: 50px;
-      background: var(--tertiaire);
-      margin: 0 15px;
-      animation: loader 2s 0.2s alternate;
-      width: 100px;
-  }
-  @keyframes loader {
-      100%{
-          transform: translateX(1500px);
-        
-      }
-      
-  }*/
+
+/* css loader*/
+
+
+
+
   /*css header*/
   header div img{
     height: 50px;
