@@ -355,16 +355,15 @@
   }
   
   /*ohmyfood*/
+  /*
   * {
     box-sizing: border-box;
   }
+  */
   
   body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+
    }
   
   
@@ -473,18 +472,19 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  #fonctionnement nav{
+
+ .fonctionnement{ 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; 
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
   }
-  .fonctionnement nav ul{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  #fonctionnement h2{
+
+#fonctionnement h2{
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
@@ -492,23 +492,35 @@
     margin-left: 20px;
     width: 50%;
   }
-  .fonctionnement{ 
+
+  #fonctionnement nav{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    width: 100%;
+
+  }
+  .fonctionnement nav ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
   }
   
-  #fonctionnement li{ 
+ 
+  
+  #fonctionnement li{ border: 1px solid green;
+    
     display: flex;
-    flex-direction: column;/* mise en ligne nombre icone et button*/
-    justify-content: center;
-    align-items: center;/* alignement nombre icone et button*/
+    flex-direction: column;   /* mise en ligne nombre icone et button*/
+    justify-content: left;
+    align-items: center;  /* alignement nombre icone et button*/
     list-style: none;
-    margin-bottom: 15px;
-    width: 100%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%; 
     margin-left: -14%;
   }
   
@@ -531,6 +543,7 @@
     right: 38%;
     top: 60px;
   }
+  
   #fonctionnement li .number_deux{
     background-color: #9356DC;
     color: white;
@@ -567,6 +580,7 @@
     right: 38%;
     top: 60px;
   }
+  
   #fonctionnement .icone{ 
     z-index: 2;
     color: grey;
@@ -591,7 +605,8 @@
   }
   #fonctionnement li button:hover{
     box-shadow: 2px 2px #bfb4cd ;
-    opacity: 0.7;
+    opacity: 0.4;
+    background-color: #b089e3;
   }
   
   
@@ -688,7 +703,7 @@
   }
   
   .heart_deux{
-    display: none;
+    /*display: none;*/
     color: var(--primaire) ;
     position: relative;
     top: -100px;
