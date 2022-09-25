@@ -381,340 +381,78 @@
   logo et titre: Shrikhand
   texte: Roboto 
   */
-  /*debut code css*/
-
-/* css loader*/
-
-
-
-
-  /*css header*/
-  header h1{
-    height: 40px;
-    width: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-
-  /* css location*/
-  #location{
-    height: 40px;
-    width: 100%;
-    background: linear-gradient(grey, 1%, whitesmoke);
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    padding-top: 15px;
-    vertical-align: center;
-  }
-  
-  #location span{
-    margin-left: 10px;
-  }
-  /*css slogan*/
-  .background_slogan{
-    width: 100%;
-    background: linear-gradient(white, whitesmoke);
-  }
-  #presentation{
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #slogan h3{
-  font-size: 16px;
-  text-align: center;
-  color: lightslategrey; 
-  font-weight: lighter;
-  }
-  
-  #button_explorer{
-    padding-bottom: 40px;
-    padding-top: 20px;
-  }
-  .lineaire-simple{
-    background: linear-gradient(#FF79DA, #9356DC);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px 25px 25px 25px;
-    color: white;
-    font-size: 18px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 35px;
-    font-size: 15px;
-    font-weight: normal;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px lavender;
-  }
-  .lineaire-simple:hover{
-    box-shadow: 2px 2px #bfb4cd ;
-    opacity: 0.7;
-  }
-  
-  
-  /*css fonctionnement*/
-  #fonctionnement{ 
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
- .fonctionnement{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-    
-  }
-
-#fonctionnement h2{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    width: 50%;
-  }
-
-  #fonctionnement nav{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between ;
-    width: 100%;
-
-  }
-  .fonctionnement nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
- 
-  
-  #fonctionnement li{ 
-    
-    display: flex;
-    flex-direction: column;   /* mise en ligne nombre icone et button*/
-    justify-content: left;
-    align-items: center;  /* alignement nombre icone et button*/
-    list-style: none;
-    list-style-type: none;
-    margin-bottom: 10px;
-    height: auto;
-    width: 100%; 
-    margin-left: -14%;
-  }
-  
-  
-  #fonctionnement li .number_un{
-    background-color: #9356DC;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 50% 50% 50% 50%;
-    border: solid 3px #9356DC;
-    z-index: 3;
-    margin-right: 5%;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    position: relative;
-    right: 38%;
-    top: 60px;
-  }
-  
-  #fonctionnement li .number_deux{
-    background-color: #9356DC;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 50% 50% 50% 50%;
-    border: solid 3px #9356DC;
-    z-index: 3;
-    margin-right: 5%;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    position: relative;
-    right: 38%;
-    top: 60px;
-  }
-  #fonctionnement li .number_trois{
-    background-color: #9356DC;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 50% 50% 50% 50%;
-    border: solid 3px #9356DC;
-    z-index: 3;
-    margin-right: 5%;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    position: relative;
-    right: 38%;
-    top: 60px;
-  }
-  
-  #fonctionnement .icone{ 
-    z-index: 2;
-    color: grey;
-    position: relative;
-    right: 26%;
-    top: 40px;
-  }
-  #fonctionnement li button{ 
+    /*css header*/
+    .header{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
-    color: black;
-    background-color: whitesmoke;
-    border-radius: 15PX 15PX 15PX 15PX;
-    border-color: whitesmoke;
-    height: 60PX;
     width: 100%;
-    z-index: 1;
-    cursor: pointer;
-  }
-  #fonctionnement li button:hover{
-    box-shadow: 2px 2px #bfb4cd ;
-    opacity: 0.4;
-    background-color: #b089e3;
-  }
-  
-  
-  .text_un{
-    font-weight: bold;
-    font-size: 15px;
-    width: 100%;
-  }
-  
-  .text_deux{ 
-   font-weight: bold;
-   font-size: 15px;
-   width: 100%;
-  }
-  
-  .text_trois{ 
-     font-weight: bold;
-     font-size: 15px;
-     width: 100%;
-  }
-  /*css restaurant presentation restaurant*/
-  .presentation_restaurant h2{
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  #presentation_restaurant img{
-    width: 100%;
-    height: 150px;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
-    z-index: 1;
-  }
-  
-  .presentation_restaurant{
-    width: 100%;
-    background-color: whitesmoke;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .presentation_restaurant .card{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 25px;
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 25px 25px 25px 25px;
-    height: 220px;
-  }
-  .presentation_restaurant a{
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Shrikhand;
+}
+header a{
     text-decoration: none;
-  }
-  .nouveau{
-    z-index: 2;
-    font-size: 14px;
-    font-weight: bold;
-    color: green;
-    list-style-type: none;
-    background-color: aquamarine;
-    position: relative;
-    top: -140px;
-    left: 75%;
-    padding: 5px 5px 5px 5px;
-  }
-  h4{
     color: black;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 2;
     position: relative;
-    top:-35px;
-    left: 10px;
-  }
-  .name{
-    color: black;
-    font-size: 16px;
-    position: relative;
-    top: -45px;
-    left: 10px;
-  }
-  .heart_un{
-    color: black;
-    background-color: white;
-    position: relative;
-    top: -100px;
-    left: 85%;
-    z-index: 2;
-    font-weight: lighter;
-    font-size: 16px;
-    height: 10px;
-    width: 10px;
-  }
-  
-  .heart_deux{
-    /*display: none;*/
-    color: var(--primaire) ;
-    position: relative;
-    top: -100px;
-    left: 74.2%;
-    z-index: 2;
-    font-weight: lighter;
-  }
-  
-  /*CSS FOOTER*/
-  footer{
+    right: 40%;
+}
+.headercontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*CSS SECTION RESTAURANT*/
+.restaurant img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  z-index: 1;
+}
+.nom_restaurant{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-radius: 25px 25px 0px 0px;
+  margin-bottom: 5px;
+  /*margin-top: -60px;*/
+  font-family:Shrikhand ;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  transform: translateY(-60px);
+}
+.nom_restaurant span{
+  margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*CSS FOOTER*/
+ footer{
     background-color: rgb(38, 36, 36); 
     display: flex; justify-content: space-between; width: 100%;
      height: auto; padding-bottom: 20px;
