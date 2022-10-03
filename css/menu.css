@@ -366,7 +366,9 @@
     background-color: lightgrey;
    }
   
-  
+  .main{ background-color: lightgrey;
+
+  }
   
   
   
@@ -382,7 +384,7 @@
   texte: Roboto 
   */
     /*css header*/
-    .header{
+    .header{  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -390,17 +392,17 @@
     width: 100%;
     background-color: white;
     height: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: Shrikhand;
 }
-header a{
+header a{ 
     text-decoration: none;
     color: black;
     position: relative;
     right: 40%;
 }
-.headercontainer{
+.headercontainer{ 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -432,6 +434,36 @@ header a{
   margin-right: 20px;
 }
 /*fin css section restaurant*/
+ /*css heart*/
+
+ .like{
+  position: relative;
+}
+ .like .fa-heart{
+  position: absolute;
+  top: 15px;
+  transition: all 500ms;
+  font-size: 25px;
+  }
+
+  .like .fa-solid{
+      background: linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+ .like .fa-regular{
+      background: lightgrey;
+      z-index: 1;
+  }
+
+ 
+
+   .like .fa-regular:hover {
+          opacity: 0;  
+}
+/*fin css heart*/
+
 
 /* css menu du restaurant*/
 
@@ -454,12 +486,12 @@ header a{
   
 }
 .underline_h3{
-  /*display: flex;*/
+  display: flex;
+  position: absolute;
+  left: 20px;
   width: 40px;
   height: 5px;
   background-color: #99e2d0;
-  position: relative;
-  right: 87%;
 }
 /* fin css entrees et underline*/
 

@@ -493,13 +493,13 @@
     margin-left: 20px;
     width: 50%;
   }
+ 
 
   #fonctionnement nav{ 
     display: flex;
     flex-direction: column;
     justify-content: space-between ;
     width: 100%;
-
   }
   .fonctionnement nav ul{
     display: flex;
@@ -512,11 +512,10 @@
  
   
   #fonctionnement li{ 
-    
     display: flex;
-    flex-direction: column;   /* mise en ligne nombre icone et button*/
+    flex-direction: column;     mise en ligne nombre icone et button
     justify-content: left;
-    align-items: center;  /* alignement nombre icone et button*/
+    align-items: center;        alignement nombre icone et button
     list-style: none;
     list-style-type: none;
     margin-bottom: 10px;
@@ -598,12 +597,13 @@
     color: black;
     background-color: whitesmoke;
     border-radius: 15PX 15PX 15PX 15PX;
-    border-color: whitesmoke;
+    border-color: white;
     height: 60PX;
     width: 100%;
     z-index: 1;
     cursor: pointer;
   }
+  
   #fonctionnement li button:hover{
     box-shadow: 2px 2px #bfb4cd ;
     opacity: 0.4;
@@ -628,6 +628,7 @@
      font-size: 15px;
      width: 100%;
   }
+  
   /*css restaurant presentation restaurant*/
   .presentation_restaurant h2{
     margin-left: 20px;
@@ -714,7 +715,46 @@
     z-index: 2;
     font-weight: lighter;
   }
+
+  /*css heart*/
+
+  .like{
+    position: relative;
+  }
+   .like .fa-heart{
+    position: absolute;
+    right: 25px;
+    bottom: 65px;
+    transition: all 500ms;
+    font-size: 25px;
+    }
+
+    .like .fa-solid{
+        background: linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+   .like .fa-regular{
+        background: white;
+        z-index: 1;
+    }
+
+   
+ 
+     .like .fa-regular:hover {
+            opacity: 0;  
+}
+
+
+
+
+
+
   
+ 
+
+
   /*CSS FOOTER*/
   footer{
     background-color: rgb(38, 36, 36); 
