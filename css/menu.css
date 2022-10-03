@@ -396,6 +396,7 @@
     padding-bottom: 20px;
     font-family: Shrikhand;
 }
+
 header a{ 
     text-decoration: none;
     color: black;
@@ -535,6 +536,8 @@ header a{
   font-family: Roboto;
   font-size: 14px;
 }
+
+/*css boutton commander*/
 #button_commander{
   padding-bottom: 40px;
   padding-top: 20px;
@@ -558,13 +561,13 @@ header a{
   padding-left: 5px;
   padding-right: 5px;
   cursor: pointer;
-  box-shadow: 2px 2px lavender;
+  /*box-shadow: 2px 2px lavender;*/
 }
 .lineaire-simple:hover{
-  box-shadow: 2px 2px #bfb4cd ;
+  box-shadow: 5px 5px #bfb4cd ;
   opacity: 0.7;
 }
-
+/*fin css boutton commander*/
 
 
 
