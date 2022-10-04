@@ -518,6 +518,10 @@ header a{
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.menu_restaurant a{
+  text-decoration: none;
+  color: black;
+}
 .menu_entrees h4{
   margin-left: 20px;
   font-family: Roboto;
@@ -611,17 +615,14 @@ header a{
   }
   
   footer a:hover{
-    text-decoration: underline; color:#0065FC;
+    text-decoration: none; color:#0065FC;
   }
   
   .navigation{
     width: 70%;
   }
   
-  footer a:hover
-  {
-    text-decoration: none; color:#0065FC;
-  }
+ 
   
   footer nav
   {
