@@ -496,6 +496,64 @@ header a{
 }
 /* fin css entrees et underline*/
 
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity:1;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity:1;
+  }
+}
+.menu_1 {
+  -webkit-animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
+          animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
+}
+
+.menu_2 {
+  -webkit-animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.2s 1 slideInFromBottom;
+          animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.2s 1 slideInFromBottom;
+}
+
+.menu_3 {
+  -webkit-animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.4s 1 slideInFromBottom;
+          animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.4s 1 slideInFromBottom;
+}
+
+.menu_4 {
+  -webkit-animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.6s 1 slideInFromBottom;
+          animation: 1s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3.6s 1 slideInFromBottom;
+}
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.menu_entier{
+  overflow: hidden;
+  flex-basis: 100%;
+}
+.titre{
+  flex-basis: 85%;
+  min-width: 0;
+}
+
 /* css section menu entrees*/
 .menu_restaurant{ 
   display: flex;
@@ -517,6 +575,9 @@ header a{
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.menu_entrees p{
+  font-weight: bold;
 }
 .menu_restaurant a{
   text-decoration: none;
@@ -540,6 +601,35 @@ header a{
   font-family: Roboto;
   font-size: 14px;
 }
+/*css boutton checked*/
+.checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $colour-tertiary;
+  color: white;
+  font-size: 20px;
+  width: 0px;
+  transition: all 0.4s ease-in-out;
+}
+  .checked i {
+      transform: rotate(0deg);
+      transition: all 0.4s ease-in-out;
+  }
+
+.menu_entrees .checked:hover {
+
+          width: 100px;
+          transition: all 0.4s ease-in-out;
+        }
+.menu_entrees .checked .i {
+              transform: rotate(360deg);
+              transition: all 0.4s ease-in-out;
+          }
+      
+  
+
+/* fin css checked*/
 
 /*css boutton commander*/
 #button_commander{
