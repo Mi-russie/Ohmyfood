@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
    <head>
+   
 
-    <meta charset="utf-8"/> <!--allow most common charset-->
+
+    <meta charset="utf-8"/> 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
@@ -22,20 +24,20 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="/manifest.json">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (max-width: 2048px)" ><!--css for desktop, tablet and phone-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (max-width: 769px)" ><!--css for desktop, tablet and phone-->
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen (min-widht:770px) and (max-width: 2048px)" >
     <script src="app.js"></script>
+
 
     <title>OhMyFood</title>
     
 </head>
 
 <body>
-     <!--loader
-     <div class="center">
-        <div class="ring"></div>
-        <span>loading...</span>
-     </div>
-     fin loader-->
+   
+
+     <div class="loader"></div>
+     
         
     <!--header-->
     <header>
@@ -43,6 +45,10 @@
             <h1><img src="logo/ohmyfood@2x.svg"  class="logo" alt="logo_ohmyfood"></h1>
         </div>
     </header>
+    <main>
+
+
+    
    <!--location-->
     <section id="location">
         <i class="fas fa-map-marker-alt local__icon"></i>
@@ -67,16 +73,12 @@
     <!--fonctionnement-->
 
     <section id="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <div class="fonctionnement">
-          
-            
-          
-                
+        <h2>Fonctionnement</h2>      
+   
             <ul>
                     <li>
                         <span class="number_un">1</span>
-                        <span class="icone"><i class="tuto__icon fas fa-mobile-alt"></i></span>
+                        <span class="icone"><i  class="tuto__icon fas fa-mobile-alt"></i></span>
                         <button class="text_un">Choisissez un restaurant</button>
                     
                     </li>
@@ -95,13 +97,12 @@
                     
                     </li>
                 </ul>
-            
-                
+
         </div>
     </section>
 
     <!--restaurant-->
-    <main>
+    
         <section id="presentation_restaurant">
 
 <div class="presentation_restaurant">
@@ -171,13 +172,13 @@
                         <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
                         alt="a-la-francaise-restaurant" 
                         class="restaurant-francais">
-                <span class="nouveau">Nouveau</span>
+                
 
                 <div class="card_body">
-                    <h4>
+                    <h4 class="francaise">
                         À la française
                     </h4>
-                    <p class="name">
+                    <p class="name_francaise">
                         Cité rouge
                     </p>
                 </div>
@@ -198,13 +199,13 @@
                     <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
                     alt="le-delice-des-sens-restaurant" 
                     class="restaurant-delice">
-            <span class="nouveau">Nouveau</span>
+            
 
                 <div class="card_body">
-                    <h4>
+                    <h4 class="delice">
                        Le délices des sens
                     </h4>
-                    <p class="name">
+                    <p class="name_delice">
                         Folie-Méricourt
                     </p>
                 </div>
@@ -222,7 +223,7 @@
 </div>
         </section>
 
-    </main>
+</main>
     
     
     <!--footer-->   

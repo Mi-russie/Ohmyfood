@@ -354,97 +354,72 @@
     display: flex;
   }
   
-  /*ohmyfood*/
-  /*
-  * {
-    box-sizing: border-box;
-  }
-  */
   
+   /* declaration des couleurs*/
+   :root{
+    --primaire: #9356DC;
+    --secondaire: #FF79DA;
+    --tertiaire: #99E2D0;
+}
+/* declaratiom de la font-family*/
+/*
+logo et titre: Shrikhand
+texte: Roboto 
+*/
   body {
     font-family: 'Raleway', sans-serif;
-
    }
-  
-  /*css loader
-  body{
-    margin: 0;
-    padding: 0;
-    font-family: montserrat;
-    background: black;
+  /*css loader*/
+  header,  main, footer {
+    animation-name: opacity;
+    animation-direction: normal;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
   }
-  .center{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  .ring{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    animation: ring 2s linear ;
-  }
-  @keyframes ring {
-    0%{
-      transform: rotate(0deg);
-      box-shadow: 1px 5px 2px #e65c00;
+  @keyframes opacity {
+    from {
+      opacity: 0;
     }
-    50%{
-      transform: rotate(180deg);
-      box-shadow: 1px 5px 2px #18b201;
-    }
-    100%{
-      transform: rotate(360deg);
-      box-shadow: 1px 5px 2px #0456c8;
+    to {
+      opacity: 1;
     }
   }
-  .ring:before{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(255,255,255,.3);
-  }
-  span{
-    color: #737373;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 200px;
-    animation: text 3s ease-in-out infinite;
-  }
-  @keyframes text {
-    50%{
-      color: black;
-    }
-  }
-  fin css loader*/
+.loader{
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-left: 16px solid #99E2D0;
+  border-bottom: #9356DC;
+  width: 150px;
+  height: 150px;
+  animation-name: spin;
+  -webkit-animation: spin 3s linear ;
+  animation: spin 1s linear;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@-webkit-keyframes spin{
+  0% { -webkit-transform: rotate(0deg); }
+  100% {-webkit-transform: rotate: 360deg; opacity: 0; }
+
+}
+@keyframes spin {
+  0% {transform: rotate(0deg) ;}
+  100% {transform: rotate(360deg); opacity: 0;}
   
-  
-  
-  /* declaration des couleurs*/
-  :root{
-      --primaire: #9356DC;
-      --secondaire: #FF79DA;
-      --tertiaire: #99E2D0;
-  }
-  /* declaratiom de la font-family*/
-  /*
-  logo et titre: Shrikhand
-  texte: Roboto 
-  */
-  /*debut code css*/
-
-/* css loader*/
-
-
-
+}
 
   /*css header*/
   header h1{
@@ -461,7 +436,7 @@
 
   /* css location*/
   #location{
-    height: 40px;
+    height: 50px;
     width: 100%;
     background: linear-gradient(grey, 1%, whitesmoke);
     font-size: 20px;
@@ -507,10 +482,10 @@
     border-radius: 25px 25px 25px 25px;
     color: white;
     font-size: 18px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 35px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 55px;
     font-size: 15px;
     font-weight: normal;
     padding-top: 5px;
@@ -535,6 +510,7 @@
  .fonctionnement{ 
     display: flex;
     flex-direction: column;
+    
     justify-content: space-between; 
     width: 100%;
     margin-top: 30px;
@@ -544,12 +520,15 @@
   }
 
 #fonctionnement h2{
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 20px;
-    width: 50%;
+    width: 100%;
   }
  
 
@@ -571,9 +550,9 @@
   
   #fonctionnement li{ 
     display: flex;
-    flex-direction: column;     mise en ligne nombre icone et button
+    flex-direction: column;     /*mise en ligne nombre icone et button*/
     justify-content: left;
-    align-items: center;        alignement nombre icone et button
+    align-items: center;        /*alignement nombre icone et button*/
     list-style: none;
     list-style-type: none;
     margin-bottom: 10px;
@@ -653,7 +632,7 @@
     align-items: center;
     margin-left: 70px;
     color: black;
-    background-color: whitesmoke;
+    background-color: #f2f2f2;
     border-radius: 15PX 15PX 15PX 15PX;
     border-color: white;
     height: 60PX;
@@ -662,11 +641,12 @@
     cursor: pointer;
   }
   
-  #fonctionnement li button:hover{
+  #fonctionnement li button:hover {
     box-shadow: 2px 2px #bfb4cd ;
-    opacity: 0.4;
+    opacity: 0.8;
     background-color: #b089e3;
   }
+ 
   
   
   .text_un{
@@ -704,7 +684,7 @@
   
   .presentation_restaurant{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #f2f2f2;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -742,11 +722,43 @@
     top:-35px;
     left: 10px;
   }
+  .francaise{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    top: -15px;
+    left: 10px;
+  }
+  .delice{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    top:-15px;
+    left: 10px;
+  }
   .name{
     color: black;
     font-size: 16px;
     position: relative;
     top: -45px;
+    left: 10px;
+  }
+  .name_delice{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: -25px;
+    left: 10px;
+  }
+  .name_francaise{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: -25px;
     left: 10px;
   }
   .heart_un{
@@ -849,7 +861,7 @@
   
   footer a:hover
   {
-    text-decoration: none; color:#0065FC;
+    text-decoration: none; color: #9356DC;
   }
   
   footer nav
