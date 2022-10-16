@@ -505,17 +505,12 @@ header a{
       z-index: 1;
   }
 
- 
-
    .like .fa-regular:hover {
           opacity: 0;  
 }
 /*fin css heart*/
 
-
 /* css menu du restaurant*/
-
-
 
 .titre{ 
   display: flex;
@@ -639,7 +634,7 @@ header a{
   font-family: Roboto;
   font-size: 14px;
 }
-/*css boutton checked
+/*css boutton checked*/
 .checked {
   display: flex;
   align-items: center;
@@ -665,7 +660,7 @@ header a{
               transition: all 0.4s ease-in-out;
           }
       
-  */
+  
 
 
 /*css boutton commander*/
@@ -699,18 +694,6 @@ header a{
   opacity: 0.7;
 }
 /*fin css boutton commander*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  /*CSS FOOTER*/
