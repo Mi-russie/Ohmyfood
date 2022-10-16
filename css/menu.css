@@ -366,10 +366,8 @@
     background-color: #f2f2f2;
    }
   
-  .main{ background-color: #f2f2f2;
-
-  }
-  
+  /*.main{ background-color: #f2f2f2;
+}*/
   
   
   /* declaration des couleurs*/
@@ -383,6 +381,55 @@
   logo et titre: Shrikhand
   texte: Roboto 
   */
+  header,  main, footer {
+    animation-name: opacity;
+    animation-direction: normal;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
+  }
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.loader{
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-left: 16px solid #99E2D0;
+  border-bottom: #9356DC;
+  width: 150px;
+  height: 150px;
+  animation-name: spin;
+  -webkit-animation: spin 0.8s linear ;
+  animation: spin 0.8s linear;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@-webkit-keyframes spin{
+  0% { -webkit-transform: rotate(0deg); }
+  100% {-webkit-transform: rotate: 360deg; opacity: 0; }
+
+}
+@keyframes spin {
+  0% {transform: rotate(0deg) ;}
+  100% {transform: rotate(360deg); opacity: 0;}
+}
     /*css header*/
     .header{  
     display: flex;
@@ -431,8 +478,8 @@ header a{
   padding-left: 20px;
   transform: translateY(-50px);
 }
-.nom_restaurant span{
-  margin-right: 20px;
+.nom_restaurant .like{
+  margin-right: 50px;
 }
 /*fin css section restaurant*/
  /*css heart*/
@@ -592,7 +639,7 @@ header a{
   font-family: Roboto;
   font-size: 14px;
 }
-/*css boutton checked*/
+/*css boutton checked
 .checked {
   display: flex;
   align-items: center;
@@ -618,9 +665,8 @@ header a{
               transition: all 0.4s ease-in-out;
           }
       
-  
+  */
 
-/* fin css checked*/
 
 /*css boutton commander*/
 #button_commander{
