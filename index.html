@@ -17,13 +17,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--both three lines below indicate the font family on googlefont-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="icon" href="/favicon.ico" sizes="any"><!--for the svg icone, or others,  the user will find on browser tab -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="/manifest.json">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (max-width: 998px)" ><!--css for desktop, tablet and phone-->
-    
+    <link rel="stylesheet" type="text/css" href="css/desktop.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (max-width: 1024px)" ><!--css for desktop, tablet and phone-->
+     
     <script src="app.js"></script>
 
 
@@ -54,32 +56,36 @@
     <div class="background_slogan">
 
         <section id="presentation">
-            <h2>Réservez le  menu qui <br> vous convient</h2>
+            <h2>Réservez le  menu qui vous convient</h2>
         </section>
 
         <section id="slogan">
-            <h3>Découvrez des restaurants d'exception, <br>sélectionnés par nos soins.</h3>
+            <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
         </section>
-    </div>
+    
     <!--button explorer-->
         <section id="button_explorer">
             <div class="lineaire-simple">Explorer nos restaurants</div>
         </section>
-
+    </div>
     <!--fonctionnement-->
     <section class="button">
-        <h2>Fonctionnement</h2>
-        <div class="button__select"><p class="number">1</p><i class="fa-solid fa-mobile-screen-button"></i><h3 class="choissisez" >Choisissez un restaurant</h3></div>
-        <div class="button__select"><p class="number">2</p><i class="fa-solid fa-list-ul"></i><h3 class="composez">Composez votre menu</h3></div>
-        <div class="button__select"><p class="number">3</p><i class="fa-solid fa-store"></i><h3 class="degustez">Dégustez au restaurant</h3></div>
+        <div class="fonction"><h2>Fonctionnement</h2></div>
+        <div class="break">
+            <div class="button__select"><p class="number">1</p><i class="fa-solid fa-mobile-screen-button"></i><h3 class="choissisez" >Choisissez un restaurant</h3></div>
+            <div class="button__select"><p class="number">2</p><i class="fa-solid fa-list-ul"></i><h3 class="composez">Composez votre menu</h3></div>
+            <div class="button__select"><p class="number">3</p><i class="fa-solid fa-store"></i><h3 class="degustez">Dégustez au restaurant</h3></div>
+        </div>
+        
     </section>
 
     <!--restaurant-->
 <section id="presentation_restaurant">
     <div class="presentation_restaurant">
         <h2>Restaurants</h2>
-
-<article>
+<div class="article">
+    <div class="article_un">
+        <article>
         <a href="la-palette-du-gout.html" class="menu-palette">
 
  <div class="card">
@@ -131,10 +137,12 @@
     </div>
             
         </a>
+    </div>
+    
 
 </article>
-        
-<article>
+        <div class="article_deux">
+            <article>
         <a href="a-la-francaise.html" class="menu-francais">
 
     <div class="card">
@@ -188,6 +196,10 @@
         </a>
 
 </article>
+        </div>
+
+</div>
+
         
 </div>
         </section>

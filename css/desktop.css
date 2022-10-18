@@ -366,7 +366,7 @@
 logo et titre: Shrikhand
 texte: Roboto 
 */
-  body {
+body {
     font-family: 'Roboto', sans-serif;
    }
    h1, h2, h3, h4, h5, h6{
@@ -442,9 +442,10 @@ texte: Roboto
     height: 50px;
     width: 100%;
     background: linear-gradient(grey, 1%, whitesmoke);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     padding-top: 15px;
@@ -457,8 +458,10 @@ texte: Roboto
   /*css slogan*/
   .background_slogan{
     width: 100%;
+    background: linear-gradient(white, #f2f2f2);
     padding-bottom: 10px;
     margin-bottom: 10px;
+
   }
   #presentation{
     font-weight: bold;
@@ -474,10 +477,12 @@ texte: Roboto
   text-align: center;
   color: lightslategrey; 
   font-weight: lighter;
-  margin-right: 30px;
-  margin-left: 30px;
+  padding-bottom: 10px;
   }
   /*css button explorer*/
+  .background_slogan{
+    
+  } 
   #button_explorer{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -490,11 +495,11 @@ texte: Roboto
     border-radius: 25px 25px 25px 25px;
     color: white;
     font-size: 18px;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 55px;
-    font-size: 15px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 65px;
+    font-size: 20px;
     font-weight: normal;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -502,32 +507,35 @@ texte: Roboto
     padding-right: 5px;
     cursor: pointer;
     box-shadow: 2px 2px lavender;
+    
   }
   .lineaire-simple:hover{
-    box-shadow: 2px 2px #bfb4cd ;
+    box-shadow: 5px 5px #bfb4cd ;
     opacity: 0.7;
   }
   
   /*css fonctionnement*/
   .button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 20px;
     margin: 15px;
-    margin-right: 10px;
+    margin-right: 0px;
   }
   .break{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:stretch;
+    flex-wrap: wrap;
     row-gap: 20px;
-    flex-wrap: nowrap;
   }
+  
   .button h2 {
     margin-bottom: 0px;
     font-weight: 600;
     color: black;
     font-size: 20px;
+    margin-right: 40px;
   }
   .button__select {
     display: flex;
@@ -537,16 +545,17 @@ texte: Roboto
     cursor: pointer;
     height: 65px;
     position: relative;
-    width: 100%;
+    width: 300px;
+    margin-right: 40px;
   }
   .button__select i {
-    /*margin-left: 9%;*/
+    margin-left: -5px;
     font-size: 17px;
     color: gray;
   }
 
   .button__select h3 {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 15px;
     align-items: flex-start;
   }
@@ -577,15 +586,18 @@ texte: Roboto
 
   /*css restaurant presentation restaurant*/
   .presentation_restaurant h2{
-    margin-left: 4%;
+    margin-left: 20px;
     font-weight: bold;
     font-size: 20px;
-    width: 50%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 60px;
   }
   .article{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
   }
   #presentation_restaurant img{
     width: 100%;
@@ -602,13 +614,13 @@ texte: Roboto
     padding-bottom: 40px;
   }
   .presentation_restaurant .card{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     background-color: white;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
     border-radius: 25px 25px 25px 25px;
     height: 220px;
-    width: 92%;
+    width: 500px;
   }
   .presentation_restaurant a{
     text-decoration: none;
@@ -637,7 +649,6 @@ texte: Roboto
     top:-35px;
     left: 10px;
   }
- 
   .name{
     color: black;
     font-size: 16px;
@@ -645,10 +656,7 @@ texte: Roboto
     top: -45px;
     left: 10px;
   }
-  
-
   /*css heart*/
-
   .like{
     position: relative;
   }
@@ -659,7 +667,6 @@ texte: Roboto
     transition: all 500ms;
     font-size: 25px;
     }
-
     .like .fa-solid{
         background: linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
         -webkit-background-clip: text;
@@ -671,9 +678,6 @@ texte: Roboto
         z-index: 1;
         color: black;
     }
-
-   
- 
      .like .fa-regular:hover {
             opacity: 0;  
 }
@@ -690,22 +694,15 @@ texte: Roboto
     font-weight: bold;
   }
   
-  
-  
-  
   footer li h3{
     padding-left: 0px;
     font-weight: bold; font-size: 18px;
     padding-top: 25px;
   }
   
-  
-  
   footer a{
     text-decoration: none; color: white;
   }
-  
- 
   
   .navigation{
     width: 70%;
