@@ -600,18 +600,11 @@ body {
   }
   .article{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
   }
-  /*.article_un, .article_deux{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    align-items: center;
-  }*/
+  
   #presentation_restaurant img{
     width: 100%;
     height: 150px;
@@ -633,7 +626,7 @@ body {
     margin-right: 20%;*/
     border-radius: 25px 25px 25px 25px;
     height: 220px;
-    width: 120%;
+    width: 270px;
   }
   .presentation_restaurant a{
     text-decoration: none;
@@ -647,7 +640,7 @@ body {
     background-color: aquamarine;
     position: relative;
     top: -140px;
-    left: 75%;
+    left: 70%;
     padding: 5px 5px 5px 5px;
   }
  .nouveaux{
@@ -701,8 +694,7 @@ body {
     justify-content: space-between; width: 100%;
      height: auto; padding-bottom: 20px;
   }
-  footer li{
-    display: inline; 
+  footer li{ display: inline;
     margin-right: 20px;
     list-style-type: none;
     color: white;
@@ -720,11 +712,6 @@ body {
     text-decoration: none; color: white;
   }
   
-  .navigation{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
   
   footer a:hover
   {

@@ -694,37 +694,32 @@
             opacity: 0;  
 }
   /*CSS FOOTER*/
+  .navigation{
+    display: flex;
+    flex-direction: column;
+  }
   footer{
     background-color: rgb(38, 36, 36); 
-    display: flex; justify-content: space-between; width: 100%;
+    display: flex;
+   justify-content: space-between; width: 100%;
      height: auto; padding-bottom: 20px;
   }
   
-  footer li{display: flex;flex-direction: column; 
-
+  footer li{ display: flex; flex-direction: column;
+margin-left: 0px;
     list-style-type: none;
     color: white;
     margin-bottom: 15px;
     font-weight: bold;
-  }
-  
-  
-  
-  
+  } 
   footer li h3{
     padding-left: 0px;
     font-weight: bold; font-size: 18px;
     padding-top: 25px;
   }
-  
-  
-  
   footer a{
     text-decoration: none; color: white;
   }
-  
- 
-  
   .navigation{
     width: 70%;
   }
