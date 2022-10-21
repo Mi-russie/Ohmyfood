@@ -702,15 +702,17 @@ body {
      height: auto; padding-bottom: 20px;
   }
   footer li{
+    display: inline; 
+    margin-right: 20px;
     list-style-type: none;
     color: white;
     margin-bottom: 15px;
     font-weight: bold;
   }
   
-  footer li h3{
+  footer li h3{font-family:Shrikland;
     padding-left: 0px;
-    font-weight: bold; font-size: 18px;
+    font-weight: bold; font-size: 22px;
     padding-top: 25px;
   }
   
@@ -719,8 +721,9 @@ body {
   }
   
   .navigation{
-
-    width: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   
   footer a:hover

@@ -699,7 +699,9 @@
     display: flex; justify-content: space-between; width: 100%;
      height: auto; padding-bottom: 20px;
   }
-  footer li{
+  
+  footer li{display: flex;flex-direction: column; 
+
     list-style-type: none;
     color: white;
     margin-bottom: 15px;
