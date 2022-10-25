@@ -364,9 +364,7 @@
   body {
     font-family: 'Roboto', sans-serif;
    }
-   h1, h2, h3, h4, h5, h6{
-    font-family: Shrikland, sans-serif;
-   }
+  
   /*css loader*/
   header,  main, footer {
     animation-name: opacity;
@@ -497,6 +495,7 @@
     padding-right: 5px;
     cursor: pointer;
     box-shadow: 2px 2px lavender;
+    transition: 250ms;
   }
   .lineaire-simple:hover{
     box-shadow: 2px 2px #bfb4cd ;
@@ -713,6 +712,7 @@ margin-left: 0px;
     font-weight: bold;
   } 
   footer li h3{
+    font-family: Shrikhand;
     padding-left: 0px;
     font-weight: bold; font-size: 18px;
     padding-top: 25px;

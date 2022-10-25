@@ -367,11 +367,10 @@ logo et titre: Shrikhand
 texte: Roboto 
 */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
+    max-width: 2048px; height: auto;
    }
-   h1, h2, h3, h4, h5, h6{
-    font-family: Shrikland, sans-serif;
-   }
+  
   /*css loader*/
   header,  main, footer {
     animation-name: opacity;
@@ -469,11 +468,11 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
   }
-  #slogan h3{
+  #slogan{
   font-size: 16px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: lightslategrey; 
   font-weight: lighter;
@@ -486,6 +485,8 @@ body {
   #button_explorer{
     padding-bottom: 20px;
     padding-top: 20px;
+    display: flex;
+    justify-content: center;
   }
   .lineaire-simple{
     background: linear-gradient(#FF79DA, #9356DC);
@@ -495,9 +496,9 @@ body {
     border-radius: 25px 25px 25px 25px;
     color: white;
     font-size: 18px;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 30%;
+    /*margin-left: 0%;
+    margin-right: 0%;*/
     height: 65px;
     font-size: 20px;
     font-weight: normal;
@@ -507,7 +508,7 @@ body {
     padding-right: 5px;
     cursor: pointer;
     box-shadow: 2px 2px lavender;
-    
+    transition: 250ms;
   }
   .lineaire-simple:hover{
     box-shadow: 5px 5px #bfb4cd ;
@@ -588,7 +589,7 @@ body {
   #presentation{display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
   }
   .presentation_restaurant h2{
@@ -603,7 +604,21 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    margin-right: 120px;
   }
+  .menu_entrees h4{
+  margin-left: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+.sous_menu_description{
+  font-weight: lighter;
+  color: black;
+  font-size: 14px;
+}
   
   #presentation_restaurant img{
     width: 100%;
@@ -622,8 +637,6 @@ body {
   .presentation_restaurant .card{
     margin-bottom: 30px;
     background-color: white;
-    /*margin-left: 30px;
-    margin-right: 20%;*/
     border-radius: 25px 25px 25px 25px;
     height: 220px;
     width: 270px;
@@ -702,9 +715,11 @@ body {
     font-weight: bold;
   }
   
-  footer li h3{font-family:Shrikland;
+  footer h3{
+    font-family: Shrikhand;
     padding-left: 0px;
-    font-weight: bold; font-size: 22px;
+    font-weight: bold; 
+    font-size: 22px;
     padding-top: 25px;
   }
   
