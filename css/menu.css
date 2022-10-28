@@ -424,7 +424,6 @@
 @-webkit-keyframes spin{
   0% { -webkit-transform: rotate(0deg); }
   100% {-webkit-transform: rotate: 360deg; opacity: 0; }
-
 }
 @keyframes spin {
   0% {transform: rotate(0deg) ;}
@@ -524,8 +523,7 @@ header a{
   color: black;
   margin-top: -20px;
   width: 100%;
-  font-family: Roboto;
-  
+  font-family: Roboto, sans-serif;
 }
 .underline_h3{
   display: flex;
@@ -538,26 +536,26 @@ header a{
 }
 /* fin css entrees et underline*/
 
+/*css animation apparition menu*/
 .menu_1 {
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0s 1 slideInFromBottom;
+  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0.5s 1 slideInFromBottom;
+          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0.5s 1 slideInFromBottom;
+          animation-delay: 0s;
 }
 
 .menu_2 {
   -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1s 1 slideInFromBottom;
           animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1s 1 slideInFromBottom;
+          animation-delay: 1s;
 }
 
 .menu_3 {
 
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 2s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 2s 1 slideInFromBottom;
+  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1.5s 1 slideInFromBottom;
+          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1.5s 1 slideInFromBottom;
+          animation-delay: 2s;
 }
 
-.menu_4 {
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
-}
 @-webkit-keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
@@ -568,6 +566,7 @@ header a{
     opacity: 1;
   }
 }
+
 @keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
@@ -578,19 +577,12 @@ header a{
     opacity: 1;
   }
 }
-.menu_entier{
-  overflow: hidden;
-  flex-basis: 100%;
-}
-.titre{
-  flex-basis: 85%;
-  min-width: 0;
-}
 
 /* css section menu entrees*/
+
 .menu_desktop{
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
@@ -614,14 +606,17 @@ flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  animation-fill-mode: backwards; 
+  transition: all 2000ms;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+
 .menu_entrees p{
   font-weight: bold;
 }
-.menu_restaurant a{
-  text-decoration: none;
-  color: black;
-}
+
 .menu_entrees h4{
   margin-left: 20px;
   font-family: Roboto;
@@ -630,10 +625,21 @@ flex-direction: column;
   font-weight: bold;
   color: black;
 }
+.card_title{
+  display: flex;
+  flex: 100%;
+  white-space: nowrap;
+  /*text-overflow: ellipsis;
+  overflow:hidden*/
+  transition: all 700ms;
+}
 .sous_menu_description{
   font-weight: lighter;
   color: black;
   font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu_description{
   display: flex;
@@ -647,32 +653,6 @@ flex-direction: column;
   font-size: 14px;
 }
 /*css boutton checked*/
-.checked {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #99E2D0  ;
-  color: white;
-  font-size: 20px;
-  width: 20px;
-  transition: all 0.4s ease-in-out;
-}
-  .checked i {
-      transform: rotate(0deg);
-      transition: all 0.4s ease-in-out;
-  }
-
-.menu_entrees .checked:hover {
-
-          width: 100px;
-          transition: all 0.4s ease-in-out;
-        }
-.menu_entrees .checked .i {
-              transform: rotate(360deg);
-              transition: all 0.4s ease-in-out;
-          }
-      
-  
 
 
 /*css boutton commander*/

@@ -362,7 +362,7 @@
   */
   
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f2f2f2;
    }
   
@@ -424,7 +424,6 @@
 @-webkit-keyframes spin{
   0% { -webkit-transform: rotate(0deg); }
   100% {-webkit-transform: rotate: 360deg; opacity: 0; }
-
 }
 @keyframes spin {
   0% {transform: rotate(0deg) ;}
@@ -479,19 +478,18 @@ header a{
   transform: translateY(-50px);
 }
 .nom_restaurant .like{
-  margin-right: 50px;
+  position: relative;
+  margin-right: 75%;
+  top: 5px;
 }
 /*fin css section restaurant*/
  /*css heart*/
 
- .like{
-  position: relative;
-}
  .like .fa-heart{
   position: absolute;
-  top: 15px;
+  top: 10px;
   transition: all 500ms;
-  font-size: 25px;
+  font-size: 35px;
   }
 
   .like .fa-solid{
@@ -538,26 +536,28 @@ flex-direction: row;
 }
 /* fin css entrees et underline*/
 
+/*css animation apparition menu*/
 .menu_1 {
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0s 1 slideInFromBottom;
+  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0.5s 1 slideInFromBottom;
+          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 0.5s 1 slideInFromBottom;
+          animation-delay: 0.8s;
+          
 }
 
 .menu_2 {
   -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1s 1 slideInFromBottom;
           animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1s 1 slideInFromBottom;
+          animation-delay: 1.3s;
 }
 
 .menu_3 {
 
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 2s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 2s 1 slideInFromBottom;
+  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1.5s 1 slideInFromBottom;
+          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 1.5s 1 slideInFromBottom;
+          animation-delay: 1.8s;
 }
 
-.menu_4 {
-  -webkit-animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
-          animation: 3s cubic-bezier(0.63, 0.35, 0.42, 0.82) 3s 1 slideInFromBottom;
-}
+
 @-webkit-keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
@@ -578,14 +578,7 @@ flex-direction: row;
     opacity: 1;
   }
 }
-.menu_entier{
-  overflow: hidden;
-  flex-basis: 100%;
-}
-.titre{
-  flex-basis: 85%;
-  min-width: 0;
-}
+
 
 /* css section menu entrees*/
 .menu_desktop{
@@ -610,12 +603,18 @@ flex-direction: row;
   justify-content: center;
   width: auto;
   border-radius: 25px 25px 25px 25px;
-  height: 70px;
+  height: fit-content;
   background-color: white;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  animation-fill-mode: backwards; 
+  transition: all 2000ms;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+
 .menu_entrees p{
   font-weight: bold;
 }
@@ -623,11 +622,12 @@ flex-direction: row;
   text-decoration: none;
   color: black;
 }
-.menu_entrees h4{
+.card_title{
   margin-left: 20px;
   font-family: Roboto;
   font-size: 18px;
-  padding-top: 10px;
+  padding-top: 50px;
+  font-weight: bold;
 }
 
 .menu_description{
@@ -640,39 +640,16 @@ flex-direction: row;
   bottom: 30px;
   font-family: Roboto;
   font-size: 14px;
+  font-weight: lighter;
+}
+.sous_menu_description{
+  font-weight: lighter;
+  color: black;
+  font-size: 14px;
+  
 }
 /*css boutton checked*/
-.checked {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 30px;
-  background: #99E2D0  ;
-  color: white;
-  font-size: 20px;
-  width: 40px;
-  height: 70px;
-  border: 25px 25px;
-  transition: all 0.4s ease-in-out;
-  visibility: hidden;
-}
-  .checked i {
-      transform: rotate(0deg);
-      transition: all 0.4s ease-in-out;
-  }
 
-.menu_entrees .checked:hover {
-visibility: visible;
-          width: 100px;
-          transition: all 0.4s ease-in-out;
-        }
-.menu_entrees .checked .i {
-              transform: rotate(360deg);
-              transition: all 0.4s ease-in-out;
-          }
-      
-  
 
 
 /*css boutton commander*/

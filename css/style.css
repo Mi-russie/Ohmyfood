@@ -535,7 +535,6 @@
     width: 100%;
   }
   .button__select i {
-    /*margin-left: 9%;*/
     font-size: 17px;
     color: gray;
   }
@@ -592,15 +591,6 @@
     margin-right: 20px;
     justify-content: center;
   }
-  /*.article_un, .article_deux{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    align-items: center;
-  }*/
   
   #presentation_restaurant img{
     width: 100%;
