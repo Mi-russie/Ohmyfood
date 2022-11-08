@@ -747,44 +747,6 @@ transform: rotate(0deg);
 transform: rotate(359deg);
 transition: transform 700ms;
 }
-
-
-/*
-@media screen and (min-width: 1024px) {
-.menu_desktop {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-.menu_desktop h3 {
-  margin: 0 1rem;
-}
-.menu_desktop h4, .menu p {
-  padding: 0.25rem 1rem;
-}
-
-.underline_h3 {
-  margin-left: 1rem;
-}
-
-.menu_1, menu_2, menu_3 {
-  max-width: 400px;
-}
-.menu_1__text, .menu_2__text, .menu_3__text {
-  padding: 0px;
-}
-.menu_1__check, .menu_2__check,.menu_3__check  {
-  height: 70px;
-}
-}
-@media screen and (min-width: 1280px) {
-.menu_1, menu_2, menu_3 {
-  max-width: 400px;
-}
-}
-*/
-
-
 /*css boutton commander*/
 #button_commander{ 
 padding-bottom: 40px;
